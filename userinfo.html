@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="userinfo.css" />
+</head>
+
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="logo">
+                <h1>Con<span>Book</span></h1>
+            </div>
+            <div class="nav-menu">
+                <div class="menu-heading">Main</div>
+                <div class="nav-item active">
+                    <i class="fas fa-chart-pie"></i>
+                    <span>Home</span>
+                </div>
+
+                <div class="nav-item">
+                    <i class="fas fa-box"></i>
+                    <span>Post</span>
+                </div>
+
+                <div class="nav-item">
+                    <i class="fas fa-images"></i>
+                    <span>Album</span>
+                </div>
+
+
+                <div class="menu-heading">Admin</div>
+                <div class="nav-item">
+                    <i class="fas fa-cog"></i>
+                    <span>Users</span>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Header -->
+        <div class="header">
+            <div class="search-bar">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search..." />
+            </div>
+            <div class="header-actions">
+                <!-- <div class="notification">
+                    <i class="fas fa-bell"></i>
+                    <div class="badge">3</div>
+                </div>
+                <div class="notification">
+                    <i class="fas fa-envelope"></i>
+                    <div class="badge">5</div>
+                </div> -->
+                <div class="user-profile">
+                    <div class="profile-img">JD</div>
+                    <div class="user-info">
+                        <div class="user-name">Jitesh Daaku</div>
+                        <div class="user-role">Administrator</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+
+            <!-- User Profile Section -->
+            <div class="profile-card">
+                <div class="profile-header">
+                    <div class="profile-avatar">JD</div>
+                    <div class="profile-details">
+                        <h2 class="profile-username">@jitesh_daaku</h2>
+                        <p class="profile-bio">🌟 Tech enthusiast | 📸 Sharing my journey | 💻 Coding for fun & work</p>
+                        <div class="profile-stats">
+                            <div><strong>120</strong> Posts</div>
+                            <div><strong>5.2k</strong> Followers</div>
+                            <div><strong>890</strong> Following</div>
+                        </div>
+                        <button class="create-post-btn"><i class="fas fa-plus"></i> Create New Post</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- User Posts Grid -->
+            <div class="posts-grid">
+                <!-- <div class="post-item"><img src="./images/unsplash-mountain-cloud.avif" alt="Post 1"></div>
+                <div class="post-item"><img src="./images/unsplash-library-bookshelf.avif" alt="Post 2"></div>
+                <div class="post-item"><img src="./images/unsplash-mountain-cloud.avif" alt="Post 3"></div>
+                <div class="post-item"><img src="./images/unsplash-mood-tracker.avif" alt="Post 4"></div>
+                <div class="post-item"><img src="./images/unsplash-people-meeting-room.avif" alt="Post 5"></div>
+                <div class="post-item"><img src="./images/unsplash-mountain-cloud.avif" alt="Post 6"></div>
+                <div class="post-item"><img src="./images/unsplash-meditation-timer.avif" alt="Post 7"></div>
+                <div class="post-item"><img src="./images/unsplash-breathing-exercise.avif" alt="Post 8"></div> -->
+                <div class="post-item">
+                    <img src="./images/unsplash-blue-lakeside.avif" alt="Post 1">
+                    <div class="post-overlay">
+                        <button class="edit-btn"><i class="fas fa-edit"></i> Edit</button>
+                        <button class="delete-btn"><i class="fas fa-trash"></i> Delete</button>
+                    </div>
+                </div>
+
+                <div class="post-item">
+                    <img src="./images/unsplash-breathing-exercise.avif" alt="Post 2">
+                    <div class="post-overlay">
+                        <button class="edit-btn"><i class="fas fa-edit"></i> Edit</button>
+                        <button class="delete-btn"><i class="fas fa-trash"></i> Delete</button>
+                    </div>
+                </div>
+
+                <div class="post-item">
+                    <img src="./images/unsplash-library-bookshelf.avif" alt="Post 3">
+                    <div class="post-overlay">
+                        <button class="edit-btn"><i class="fas fa-edit"></i> Edit</button>
+                        <button class="delete-btn"><i class="fas fa-trash"></i> Delete</button>
+                    </div>
+                </div>
+
+                <div class="post-item">
+                    <img src="./images/unsplash-library-bookshelf.avif" alt="Post 4">
+                    <div class="post-overlay">
+                        <button class="edit-btn"><i class="fas fa-edit"></i> Edit</button>
+                        <button class="delete-btn"><i class="fas fa-trash"></i> Delete</button>
+                    </div>
+                </div>
+
+                <div class="post-item">
+                    <img src="./images/unsplash-meditation-timer.avif" alt="Post 5">
+                    <div class="post-overlay">
+                        <button class="edit-btn"><i class="fas fa-edit"></i> Edit</button>
+                        <button class="delete-btn"><i class="fas fa-trash"></i> Delete</button>
+                    </div>
+                </div>
+
+                <div class="post-item">
+                    <img src="./images/unsplash-mood-tracker.avif" alt="Post 6">
+                    <div class="post-overlay">
+                        <button class="edit-btn"><i class="fas fa-edit"></i> Edit</button>
+                        <button class="delete-btn"><i class="fas fa-trash"></i> Delete</button>
+                    </div>
+                </div>
+
+                <div class="post-item">
+                    <img src="./images/unsplash-mountain-cloud.avif" alt="Post 7">
+                    <div class="post-overlay">
+                        <button class="edit-btn"><i class="fas fa-edit"></i> Edit</button>
+                        <button class="delete-btn"><i class="fas fa-trash"></i> Delete</button>
+                    </div>
+                </div>
+
+                <div class="post-item">
+                    <img src="./images/unsplash-mountain-top.avif" alt="Post 8">
+                    <div class="post-overlay">
+                        <button class="edit-btn"><i class="fas fa-edit"></i> Edit</button>
+                        <button class="delete-btn"><i class="fas fa-trash"></i> Delete</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
